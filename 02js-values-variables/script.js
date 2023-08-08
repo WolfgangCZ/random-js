@@ -123,8 +123,65 @@ else
     console.log("False");
 }
 */
-
+/*
 const age = 10;
 
 console.log(age === "10"); //false
 console.log(age === 10); //true 
+
+prompt("whats your favorite number");
+*/
+/*
+CHALLENGE #3
+There are two gymnastics teams: Dolphins and Koalas. 
+They compete against each other 3 times. The winner with 
+the highest average score wins a trophy!
+
+Your tasks:
+1. Calculate the average score for each team, using the test 
+data included below. The average score for Dolphins should be 
+assigned to the scoreDolphins variable, and the average score of 
+Koalas should be assigned to the scoreKoalas variable.
+2. Compare the team's average scores to determine the winner 
+of the competition, and print to the console:
+"Dolphins win the trophy" if Dolphins win, or
+"Koalas win the trophy" if Koalas win, or
+"Both win the trophy" if their average scores are equal.
+
+TEST DATA: Dolphins scored 96, 108, and 89. Koalas scored 88, 91, and 110.
+👋 OPTIONAL: You can watch my solution in video format in the next lecture
+*/
+/*
+const dolphins = (96 + 108 + 89)/3;
+const koalas = (88 + 97 + 110)/3;
+
+if(dolphins === koalas)
+{
+    console.log("Both win the trophy");
+}
+else if(koalas < dolphins)
+{
+    console.log("Dolphins win the trophy");
+}
+else
+{
+    console.log("Koalas win the trophy");
+}
+*/
+/*
+switch(453)
+{
+    case 1:
+        console.log("case 1");
+        break;
+    case 2:
+        console.log("case 2");
+        break;
+    default:
+        console.log("default");
+}
+*/
+
+const age = 8;
+age >= 18 ? console.log("over 18") : console.log("under 18");
+
