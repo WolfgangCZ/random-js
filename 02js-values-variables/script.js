@@ -211,5 +211,11 @@ TEST DATA: Test with different bill values: 275, 40, and 430
 
 👋 OPTIONAL: You can watch my solution in video format in the next lecture
 */
+/*
+//SOLUTION
+let bill = 275;
+const tip = bill < 40 && bill > 300 ? 0.20 * bill : 0.15 * bill; 
 
+console.log(`The bill was ${bill}, the tip was ${tip}, and the total value ${tip+bill}.`);
+*/
 
