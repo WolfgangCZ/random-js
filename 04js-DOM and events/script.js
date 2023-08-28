@@ -2,8 +2,8 @@
 
 console.log("======START=========");
 
-console.log(document.querySelector('.title').textContent);
+console.log(document.querySelector('.nadpis1').textContent);
 
-document.querySelector('title').textContent = 'hovno';
+//document.querySelector('.nadpis').textContent = 'hovno';
 
 console.log("======FINISH========");
