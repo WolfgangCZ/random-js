@@ -9,7 +9,7 @@ let score = 20;
 let highScore = 0;
 //check is number is inputted??? what is this word
 document.querySelector(".check")
-.addEventListener("click", function(){
+.addEventListener("click" || "enter", function(){
 let guess = document.querySelector(".guess").value;
     if(newStart && !endGame)
     {
