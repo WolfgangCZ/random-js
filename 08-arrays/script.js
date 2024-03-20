@@ -34,7 +34,7 @@ const account4 = {
   pin: 4444,
 };
 
-const accounts = [account1, account2, account3, account4];
+let accounts = [account1, account2, account3, account4];
 
 // Elements
 const labelWelcome = document.querySelector('.welcome');
@@ -171,14 +171,14 @@ btnLogin.addEventListener('click', function(e)
     containerApp.style.opacity = 100;
     updateUI(currentAccount);
   }
-
+  
 });
 
 btnTransfer.addEventListener("click", event => {
   event.preventDefault();
   const amount = Number(inputTransferAmount.value);
   const reciever = accounts.find(acc => inputTransferTo.value === acc.username); 
-
+  
   if(amount > 0 && currentAccount.balance >= amount && reciever !== currentAccount && reciever)
   {
     currentAccount.movements.push(-amount);
@@ -194,14 +194,18 @@ btnClose.addEventListener("click", function(e){
   const pin = Number(inputClosePin.value);
   if(user === currentAccount.username && pin === currentAccount.pin)
   {
-    const index = accounts.find(acc => acc.username === currentAccount.username);
-    console.log("its probably working")
+    const index = accounts.findIndex(acc => acc.username === currentAccount.username);
+    console.log(`its index: ${index}`)
+    containerApp.style.opacity = 0;
+    accounts.splice(index, 1);
   }
 });
 /////////////////////////////////////////////////
 /////////////////////////////////////////////////
 // LECTURES
 
+console.log(movements);
+console.log(movements.includes(-130));
 
 
 const currencies = new Map([
