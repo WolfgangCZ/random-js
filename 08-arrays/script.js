@@ -89,8 +89,10 @@ function createUserNames(accs)
     .join('');
   });
 };
+
 createUserNames(accounts);
 console.log(accounts);
+
 
 function calcDisplaySummary(acc)
 {
@@ -112,6 +114,7 @@ function calcDisplaySummary(acc)
   labelSumInterest.textContent = `${interest.toFixed(2)}€`
 };
 
+//transfer money from one account to another
 btnTransfer.addEventListener("click", function(event){
   event.preventDefault();
   const amount = Number(inputTransferAmount.value);
@@ -188,6 +191,7 @@ btnTransfer.addEventListener("click", event => {
   inputTransferAmount.value = inputTransferTo.value = '';
 });
 
+
 btnClose.addEventListener("click", function(e){
   e.preventDefault();
   const user = inputCloseUsername.value;
@@ -200,6 +204,7 @@ btnClose.addEventListener("click", function(e){
     accounts.splice(index, 1);
   }
 });
+
 /////////////////////////////////////////////////
 /////////////////////////////////////////////////
 // LECTURES
@@ -216,6 +221,9 @@ const currencies = new Map([
 
 
 
-
-
 ///////////////////////
+
+const x = Array.from({length: 10}, (val, i) => i + 1);
+console.log("test");
+console.log(`this is x: ${x}`);
+console.log("hello");
